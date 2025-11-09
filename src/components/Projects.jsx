@@ -1,22 +1,22 @@
-import { ExternalLink, Shield } from 'lucide-react';
+import { ExternalLink, Github } from 'lucide-react';
 
 const projects = [
   {
-    title: 'Web App Pentest Report',
-    desc: 'Comprehensive OWASP ASVS-aligned penetration test with prioritized remediation plan.',
-    tags: ['OWASP', 'ASVS', 'Burp Suite', 'Auth'],
+    title: 'User Behavior Anomaly Detection',
+    desc: 'Analyzed login activity using Python and pandas to detect unusual user behavior patterns.',
+    tags: ['Python', 'Pandas', 'Security Analytics'],
     link: '#',
   },
   {
-    title: 'SIEM Detection Pack',
-    desc: 'Custom Sigma rules and detections for common TTPs aligned to MITRE ATT&CK.',
-    tags: ['Sigma', 'Splunk', 'MITRE ATT&CK'],
+    title: 'Web Application Penetration Testing Framework',
+    desc: 'Automated security scanner for OWASP Top 10 checks, generating CSV vulnerability reports.',
+    tags: ['OWASP Top 10', 'Automation', 'CSV Reports'],
     link: '#',
   },
   {
-    title: 'Cloud Hardening Guide',
-    desc: 'Guardrails and automated checks for IAM, encryption, and network segmentation.',
-    tags: ['AWS', 'Terraform', 'CIS Benchmarks'],
+    title: 'Firewall Log Analyzer',
+    desc: 'Python tool to parse and summarize firewall logs, simulating real-world SOC workflows.',
+    tags: ['Python', 'Logs', 'SOC'],
     link: '#',
   },
 ];
@@ -27,12 +27,12 @@ export default function Projects() {
       <div className="mx-auto max-w-6xl px-4">
         <div className="flex items-end justify-between gap-4">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-slate-900">Highlighted Work</h2>
-            <p className="mt-2 text-slate-600 max-w-2xl">Selected projects that showcase offensive and defensive expertise.</p>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-slate-900">Projects</h2>
+            <p className="mt-2 text-slate-600 max-w-2xl">Hands-on builds that reflect my approach to practical security.</p>
           </div>
           <a href="#contact" className="hidden sm:inline-flex items-center gap-2 rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-900 hover:bg-slate-50">
-            <Shield className="h-4 w-4" />
-            Request a demo
+            <Github className="h-4 w-4" />
+            See more
           </a>
         </div>
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -40,7 +40,7 @@ export default function Projects() {
             <article key={p.title} className="group rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition-shadow">
               <div className="flex items-start justify-between gap-4">
                 <h3 className="text-lg font-semibold text-slate-900">{p.title}</h3>
-                <a href={p.link} className="inline-flex h-9 w-9 items-center justify-center rounded-md border border-slate-200 text-slate-700 hover:bg-slate-50">
+                <a href={p.link} className="inline-flex h-9 w-9 items-center justify-center rounded-md border border-slate-200 text-slate-700 hover:bg-slate-50" aria-label={`Open ${p.title}`}>
                   <ExternalLink className="h-4 w-4" />
                 </a>
               </div>

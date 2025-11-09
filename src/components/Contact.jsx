@@ -1,4 +1,4 @@
-import { Mail, ArrowRight } from 'lucide-react';
+import { Mail, ArrowRight, Linkedin, Github } from 'lucide-react';
 
 export default function Contact() {
   return (
@@ -12,6 +12,18 @@ export default function Contact() {
             </p>
             <h2 className="mt-4 text-3xl md:text-4xl font-bold tracking-tight">Let’s strengthen your security</h2>
             <p className="mt-3 text-white/70">Share your needs—assessment, pentest, or ongoing defense. I’ll respond within 24 hours.</p>
+            <div className="mt-6 flex items-center gap-3">
+              <a href="mailto:hiamalthomas@gmail.com" className="inline-flex items-center gap-2 rounded-lg border border-white/15 bg-white/5 px-4 py-2 text-sm hover:bg-white/10">
+                <Mail className="h-4 w-4" />
+                hiamalthomas@gmail.com
+              </a>
+              <a href="#" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="inline-flex items-center gap-2 rounded-lg border border-white/15 bg-white/5 px-3 py-2 hover:bg-white/10">
+                <Linkedin className="h-4 w-4" />
+              </a>
+              <a href="#" target="_blank" rel="noreferrer" aria-label="GitHub" className="inline-flex items-center gap-2 rounded-lg border border-white/15 bg-white/5 px-3 py-2 hover:bg-white/10">
+                <Github className="h-4 w-4" />
+              </a>
+            </div>
           </div>
           <form onSubmit={(e)=>e.preventDefault()} className="rounded-2xl bg-white p-6 text-slate-900 shadow-xl">
             <div className="grid gap-4">
@@ -31,7 +43,6 @@ export default function Contact() {
                 Send Message
                 <ArrowRight className="ml-2 h-4 w-4" />
               </button>
-              <p className="text-xs text-slate-500">Or email me directly: <a href="mailto:you@example.com" className="underline">you@example.com</a></p>
             </div>
           </form>
         </div>

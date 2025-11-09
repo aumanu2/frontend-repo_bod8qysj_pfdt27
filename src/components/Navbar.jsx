@@ -17,13 +17,13 @@ export default function Navbar() {
           <a href="#contact" className="hover:text-slate-900">Contact</a>
         </nav>
         <div className="flex items-center gap-2">
-          <a aria-label="GitHub" href="https://github.com/" target="_blank" rel="noreferrer" className="p-2 rounded-md hover:bg-slate-100">
+          <a aria-label="GitHub" href="#" target="_blank" rel="noreferrer" className="p-2 rounded-md hover:bg-slate-100">
             <Github className="h-5 w-5 text-slate-700" />
           </a>
-          <a aria-label="LinkedIn" href="https://linkedin.com/" target="_blank" rel="noreferrer" className="p-2 rounded-md hover:bg-slate-100">
+          <a aria-label="LinkedIn" href="#" target="_blank" rel="noreferrer" className="p-2 rounded-md hover:bg-slate-100">
             <Linkedin className="h-5 w-5 text-slate-700" />
           </a>
-          <a aria-label="Email" href="mailto:amal@example.com" className="p-2 rounded-md hover:bg-slate-100">
+          <a aria-label="Email" href="mailto:hiamalthomas@gmail.com" className="p-2 rounded-md hover:bg-slate-100">
             <Mail className="h-5 w-5 text-slate-700" />
           </a>
         </div>
